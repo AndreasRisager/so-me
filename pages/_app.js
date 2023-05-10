@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
         dangerouslySetInnerHTML={{
           __html: `window.fbAsyncInit = function() {
     FB.init({
-      appId      : '613731087296538',
+      appId      : '549531483779644',
       cookie     : true,
       xfbml      : true,
       version    : 'v16.0'
