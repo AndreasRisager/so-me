@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div>
-      {loggedIn ? (
+      {loggedIn && accessToken ? (
         <>
           <p>You are logged in with Facebook!</p>
           <InstagramProfile accessToken={accessToken} />

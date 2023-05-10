@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const InstagramProfile = ({ accessToken }) => {
-  const apiUrl = `https://graph.instagram.com/me?fields=id,username,account_type,name,profile_picture_url,followers_count,media_count&access_token=${accessToken}`;
+  const apiUrl = `https://graph.facebook.com/v16.0/17841405309211844?fields=business_discovery.username(bluebottle){followers_count,media_count}&access_token=${accessToken}`;
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
